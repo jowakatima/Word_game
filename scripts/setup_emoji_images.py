@@ -62,6 +62,27 @@ EMOJI_MAP = [
     ("round_28", "1F3D6",     "1F3F0"),       # beach + castle       = sandcastle
     ("round_29", "2600",      "1F453"),       # sun + glasses        = sunglasses
     ("round_30", "2B50",      "1F4A1"),       # star + light bulb    = starlight
+    # Rounds 31-50
+    ("round_31", "1F499",     "1F353"),       # blue heart + strawberry = blueberry
+    ("round_32", "1F33D",     "1F33E"),       # corn + wheat/sheaf   = cornfield
+    ("round_33", "1F373",     "1F4DA"),       # frying pan + books   = cookbook
+    ("round_34", "1F33F",     "1F997"),       # herb + cricket       = grasshopper
+    ("round_35", "1F347",     "1F34A"),       # grapes + orange      = grapefruit
+    ("round_36", "1F91A",     "1F45C"),       # raised hand + handbag = handbag
+    ("round_37", "1F321",     "1F415"),       # thermometer + dog    = hotdog
+    ("round_38", "1F9CA",     "26F0"),        # ice cube + mountain  = iceberg
+    ("round_39", "1F5DD",     "1F573"),       # key + hole           = keyhole
+    ("round_40", "1F371",     "1F4E6"),       # bento box + package  = lunchbox
+    ("round_41", "1F327",     "1F380"),       # rain cloud + ribbon bow = rainbow
+    ("round_42", "26F8",      "1FAB5"),       # ice skate + wood log = skateboard
+    ("round_43", "1F9B7",     "1F58C"),       # tooth + paintbrush   = toothbrush
+    ("round_44", "1F4A7",     "1F342"),       # water drop + fallen leaf = waterfall
+    ("round_45", "1F64F",     "1F9B4"),       # praying hands + bone = wishbone
+    ("round_46", "1F4A5",     "1F33D"),       # explosion + corn     = popcorn
+    ("round_47", "1F41C",     "26F0"),        # ant + mountain       = anthill
+    ("round_48", "1F33F",     "1F437"),       # herb/hedge + pig     = hedgehog
+    ("round_49", "1F499",     "1F514"),       # blue heart + bell    = bluebell
+    ("round_50", "1F375",     "1F944"),       # teacup + spoon       = teaspoon
 ]
 
 
