@@ -1,72 +1,32 @@
 [
-  {
-    "id": 1,
-    "answer": "sunflower",
-    "images": ["images/round_01/image1.jpg", "images/round_01/image2.jpg"],
-    "labels": ["sun", "flower"],
-    "hint": "A tall plant with yellow petals, often found growing in fields"
-  },
-  {
-    "id": 2,
-    "answer": "starfish",
-    "images": ["images/round_02/image1.jpg", "images/round_02/image2.jpg"],
-    "labels": ["star", "fish"],
-    "hint": "A five-armed sea creature found on sandy beaches"
-  },
-  {
-    "id": 3,
-    "answer": "eggplant",
-    "images": ["images/round_03/image1.jpg", "images/round_03/image2.jpg"],
-    "labels": ["egg", "plant"],
-    "hint": "A dark purple vegetable used in ratatouille and moussaka"
-  },
-  {
-    "id": 4,
-    "answer": "football",
-    "images": ["images/round_04/image1.jpg", "images/round_04/image2.jpg"],
-    "labels": ["foot", "ball"],
-    "hint": "The world's most popular team sport"
-  },
-  {
-    "id": 5,
-    "answer": "raincoat",
-    "images": ["images/round_05/image1.jpg", "images/round_05/image2.jpg"],
-    "labels": ["rain", "coat"],
-    "hint": "Worn as outerwear to stay dry in wet weather"
-  },
-  {
-    "id": 6,
-    "answer": "firefly",
-    "images": ["images/round_06/image1.jpg", "images/round_06/image2.jpg"],
-    "labels": ["fire", "fly"],
-    "hint": "A small insect that produces its own light at night"
-  },
-  {
-    "id": 7,
-    "answer": "teapot",
-    "images": ["images/round_07/image1.jpg", "images/round_07/image2.jpg"],
-    "labels": ["tea", "pot"],
-    "hint": "A vessel used to brew and pour a classic hot drink"
-  },
-  {
-    "id": 8,
-    "answer": "snowball",
-    "images": ["images/round_08/image1.jpg", "images/round_08/image2.jpg"],
-    "labels": ["snow", "ball"],
-    "hint": "Children make and throw these at each other in winter"
-  },
-  {
-    "id": 9,
-    "answer": "butterfly",
-    "images": ["images/round_09/image1.jpg", "images/round_09/image2.jpg"],
-    "labels": ["butter", "fly"],
-    "hint": "A colourful winged insect that starts life as a caterpillar"
-  },
-  {
-    "id": 10,
-    "answer": "doorbell",
-    "images": ["images/round_10/image1.jpg", "images/round_10/image2.jpg"],
-    "labels": ["door", "bell"],
-    "hint": "Press this when you arrive at someone's house to announce yourself"
-  }
+  {"id":1,"answer":"sunflower","images":["images/round_01/image1.png","images/round_01/image2.png"],"labels":["sun","flower"],"hint":"A tall plant with yellow petals, often found growing in fields"},
+  {"id":2,"answer":"starfish","images":["images/round_02/image1.png","images/round_02/image2.png"],"labels":["star","fish"],"hint":"A five-armed sea creature found on sandy beaches"},
+  {"id":3,"answer":"eggplant","images":["images/round_03/image1.png","images/round_03/image2.png"],"labels":["egg","plant"],"hint":"A dark purple vegetable used in ratatouille and moussaka"},
+  {"id":4,"answer":"football","images":["images/round_04/image1.png","images/round_04/image2.png"],"labels":["foot","ball"],"hint":"The world's most popular team sport"},
+  {"id":5,"answer":"raincoat","images":["images/round_05/image1.png","images/round_05/image2.png"],"labels":["rain","coat"],"hint":"Worn as outerwear to stay dry in wet weather"},
+  {"id":6,"answer":"firefly","images":["images/round_06/image1.png","images/round_06/image2.png"],"labels":["fire","fly"],"hint":"A small insect that produces its own light at night"},
+  {"id":7,"answer":"teapot","images":["images/round_07/image1.png","images/round_07/image2.png"],"labels":["tea","pot"],"hint":"A vessel used to brew and pour a classic hot drink"},
+  {"id":8,"answer":"snowball","images":["images/round_08/image1.png","images/round_08/image2.png"],"labels":["snow","ball"],"hint":"Children make and throw these at each other in winter"},
+  {"id":9,"answer":"butterfly","images":["images/round_09/image1.png","images/round_09/image2.png"],"labels":["butter","fly"],"hint":"A colourful winged insect that starts life as a caterpillar"},
+  {"id":10,"answer":"doorbell","images":["images/round_10/image1.png","images/round_10/image2.png"],"labels":["door","bell"],"hint":"Press this when you arrive at someone's house"},
+  {"id":11,"answer":"honeybee","images":["images/round_11/image1.png","images/round_11/image2.png"],"labels":["honey","bee"],"hint":"A small buzzing insect that lives in hives and makes honey"},
+  {"id":12,"answer":"pineapple","images":["images/round_12/image1.png","images/round_12/image2.png"],"labels":["pine","apple"],"hint":"A tropical fruit with a spiky crown and sweet yellow flesh"},
+  {"id":13,"answer":"watermelon","images":["images/round_13/image1.png","images/round_13/image2.png"],"labels":["water","melon"],"hint":"A large green fruit with sweet red flesh and black seeds"},
+  {"id":14,"answer":"doghouse","images":["images/round_14/image1.png","images/round_14/image2.png"],"labels":["dog","house"],"hint":"A small outdoor shelter built for a pet to sleep in"},
+  {"id":15,"answer":"cupcake","images":["images/round_15/image1.png","images/round_15/image2.png"],"labels":["cup","cake"],"hint":"A small single-serving cake often topped with frosting"},
+  {"id":16,"answer":"catfish","images":["images/round_16/image1.png","images/round_16/image2.png"],"labels":["cat","fish"],"hint":"A freshwater fish with whisker-like barbels around its mouth"},
+  {"id":17,"answer":"dragonfly","images":["images/round_17/image1.png","images/round_17/image2.png"],"labels":["dragon","fly"],"hint":"A large winged insect often seen hovering near ponds"},
+  {"id":18,"answer":"bookworm","images":["images/round_18/image1.png","images/round_18/image2.png"],"labels":["book","worm"],"hint":"A person who loves reading, or a worm that chews through paper"},
+  {"id":19,"answer":"snowman","images":["images/round_19/image1.png","images/round_19/image2.png"],"labels":["snow","man"],"hint":"A figure made from rolled snowballs, often with a carrot nose"},
+  {"id":20,"answer":"seashell","images":["images/round_20/image1.png","images/round_20/image2.png"],"labels":["sea","shell"],"hint":"A hard outer covering of a sea creature, found on beaches"},
+  {"id":21,"answer":"moonlight","images":["images/round_21/image1.png","images/round_21/image2.png"],"labels":["moon","light"],"hint":"The soft glow you see at night when the moon is shining"},
+  {"id":22,"answer":"campfire","images":["images/round_22/image1.png","images/round_22/image2.png"],"labels":["camp","fire"],"hint":"An outdoor fire used for warmth and toasting marshmallows"},
+  {"id":23,"answer":"goldfish","images":["images/round_23/image1.png","images/round_23/image2.png"],"labels":["gold","fish"],"hint":"A small orange pet fish kept in a bowl or tank"},
+  {"id":24,"answer":"eyeball","images":["images/round_24/image1.png","images/round_24/image2.png"],"labels":["eye","ball"],"hint":"The round organ in your head that you use to see"},
+  {"id":25,"answer":"blackbird","images":["images/round_25/image1.png","images/round_25/image2.png"],"labels":["black","bird"],"hint":"A common garden bird with dark feathers and a yellow beak"},
+  {"id":26,"answer":"cowboy","images":["images/round_26/image1.png","images/round_26/image2.png"],"labels":["cow","boy"],"hint":"A person who herds cattle, often wearing a hat and boots"},
+  {"id":27,"answer":"fireman","images":["images/round_27/image1.png","images/round_27/image2.png"],"labels":["fire","man"],"hint":"A person whose job is to put out fires and rescue people"},
+  {"id":28,"answer":"sandcastle","images":["images/round_28/image1.png","images/round_28/image2.png"],"labels":["sand","castle"],"hint":"A structure built on the beach using wet sand"},
+  {"id":29,"answer":"sunglasses","images":["images/round_29/image1.png","images/round_29/image2.png"],"labels":["sun","glasses"],"hint":"Worn on your face to protect your eyes from bright sunshine"},
+  {"id":30,"answer":"starlight","images":["images/round_30/image1.png","images/round_30/image2.png"],"labels":["star","light"],"hint":"The faint glow that reaches us from distant stars at night"}
 ]

@@ -83,7 +83,7 @@ def game():
     session["wrong_count"] = 0
     session["hint_shown"] = False
 
-    return render_template("game.html", round=chosen)
+    return render_template("game.html", round=chosen, total_rounds=len(rounds))
 
 
 @app.route("/api/answer", methods=["POST"])
