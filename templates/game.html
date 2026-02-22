@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Game &mdash; Round {{ round.id }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header class="game-header">
+      <a href="/" class="btn btn-secondary btn-small">&#8592; Main Menu</a>
+      <h1 class="game-title">What compound word do these images make?</h1>
+      <span class="round-badge">Round {{ round.id }} / 10</span>
+    </header>
+
+    <main class="game-content">
+
+      <!-- Image tiles -->
+      <section class="image-row">
+        <div class="image-tile">
+          <img
+            src="{{ url_for('static', filename=round.images[0]) }}"
+            alt="Image 1"
+            onerror="this.src='{{ url_for('static', filename='images/placeholder.svg') }}'"
+          >
+        </div>
+        <div class="plus-divider">+</div>
+        <div class="image-tile">
+          <img
+            src="{{ url_for('static', filename=round.images[1]) }}"
+            alt="Image 2"
+            onerror="this.src='{{ url_for('static', filename='images/placeholder.svg') }}'"
+          >
+        </div>
+      </section>
+
+      <!-- Hint box (hidden until 2 wrong guesses) -->
+      <div id="hint-box" class="hint-box hidden">
+        <strong>Hint:</strong> <span id="hint-text"></span>
+      </div>
+
+      <!-- Feedback message -->
+      <div id="feedback-msg" class="feedback hidden"></div>
+
+      <!-- Guess section -->
+      <section class="guess-section">
+        <div class="wrong-counter">
+          Wrong guesses: <span id="wrong-count">0</span> / 4
+        </div>
+        <form id="guess-form" autocomplete="off">
+          <input
+            type="text"
+            id="guess-input"
+            class="guess-input"
+            placeholder="Type the compound word&hellip;"
+            autocapitalize="none"
+            spellcheck="false"
+            autofocus
+          >
+          <button type="submit" id="guess-btn" class="btn btn-primary">Guess</button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Result overlay — hidden until round ends -->
+    <div id="result-overlay" class="overlay hidden" role="dialog" aria-modal="true">
+      <div class="overlay-card">
+        <div id="result-icon" class="result-icon"></div>
+        <h2 id="result-title" class="result-title"></h2>
+        <p id="result-answer" class="result-answer"></p>
+        <div class="overlay-actions">
+          <button id="btn-next" class="btn btn-primary">Next Round</button>
+          <button id="btn-menu" class="btn btn-secondary">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

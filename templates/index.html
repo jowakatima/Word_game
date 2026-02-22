@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Game</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header class="site-header">
+      <h1 class="site-title">Word Game</h1>
+      <p class="site-subtitle">Look at the images — what compound word do they make?</p>
+    </header>
+
+    <main class="main-content">
+
+      <!-- Start button -->
+      <section class="cta-section">
+        <a href="/game" class="btn btn-primary btn-large">Start New Game</a>
+      </section>
+
+      <!-- Last 5 results -->
+      <section class="history-section">
+        <h2 class="history-title">Recent Results</h2>
+
+        {% if history %}
+          <ul class="history-list">
+            {% for entry in history %}
+            <li class="history-card history-card--{{ entry.result }}">
+              <span class="history-answer">{{ entry.answer }}</span>
+              <span class="badge badge--{{ entry.result }}">
+                {{ "WIN" if entry.result == "win" else "LOSS" }}
+              </span>
+              <span class="history-meta">
+                {% if entry.wrong_guesses == 0 %}
+                  First guess!
+                {% elif entry.wrong_guesses == 1 %}
+                  1 wrong guess
+                {% else %}
+                  {{ entry.wrong_guesses }} wrong guesses
+                {% endif %}
+              </span>
+              <span class="history-time">{{ entry.timestamp[:10] }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="history-empty">No rounds played yet — start your first game above!</p>
+        {% endif %}
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Word Game &mdash; run locally at <code>http://127.0.0.1:5000</code></p>
+    </footer>
+
+  </div>
+</body>
+</html>

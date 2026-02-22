@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "answer": "sunflower",
+    "images": ["images/round_01/image1.jpg", "images/round_01/image2.jpg"],
+    "labels": ["sun", "flower"],
+    "hint": "A tall plant with yellow petals, often found growing in fields"
+  },
+  {
+    "id": 2,
+    "answer": "starfish",
+    "images": ["images/round_02/image1.jpg", "images/round_02/image2.jpg"],
+    "labels": ["star", "fish"],
+    "hint": "A five-armed sea creature found on sandy beaches"
+  },
+  {
+    "id": 3,
+    "answer": "eggplant",
+    "images": ["images/round_03/image1.jpg", "images/round_03/image2.jpg"],
+    "labels": ["egg", "plant"],
+    "hint": "A dark purple vegetable used in ratatouille and moussaka"
+  },
+  {
+    "id": 4,
+    "answer": "football",
+    "images": ["images/round_04/image1.jpg", "images/round_04/image2.jpg"],
+    "labels": ["foot", "ball"],
+    "hint": "The world's most popular team sport"
+  },
+  {
+    "id": 5,
+    "answer": "raincoat",
+    "images": ["images/round_05/image1.jpg", "images/round_05/image2.jpg"],
+    "labels": ["rain", "coat"],
+    "hint": "Worn as outerwear to stay dry in wet weather"
+  },
+  {
+    "id": 6,
+    "answer": "firefly",
+    "images": ["images/round_06/image1.jpg", "images/round_06/image2.jpg"],
+    "labels": ["fire", "fly"],
+    "hint": "A small insect that produces its own light at night"
+  },
+  {
+    "id": 7,
+    "answer": "teapot",
+    "images": ["images/round_07/image1.jpg", "images/round_07/image2.jpg"],
+    "labels": ["tea", "pot"],
+    "hint": "A vessel used to brew and pour a classic hot drink"
+  },
+  {
+    "id": 8,
+    "answer": "snowball",
+    "images": ["images/round_08/image1.jpg", "images/round_08/image2.jpg"],
+    "labels": ["snow", "ball"],
+    "hint": "Children make and throw these at each other in winter"
+  },
+  {
+    "id": 9,
+    "answer": "butterfly",
+    "images": ["images/round_09/image1.jpg", "images/round_09/image2.jpg"],
+    "labels": ["butter", "fly"],
+    "hint": "A colourful winged insect that starts life as a caterpillar"
+  },
+  {
+    "id": 10,
+    "answer": "doorbell",
+    "images": ["images/round_10/image1.jpg", "images/round_10/image2.jpg"],
+    "labels": ["door", "bell"],
+    "hint": "Press this when you arrive at someone's house to announce yourself"
+  }
+]

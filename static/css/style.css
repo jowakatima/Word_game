@@ -1,0 +1,454 @@
+/* ============================================================
+   CSS Variables — color palette and shared tokens
+   ============================================================ */
+:root {
+  --color-bg:           #f5f7fa;
+  --color-surface:      #ffffff;
+  --color-accent:       #3b82f6;
+  --color-accent-dark:  #1d4ed8;
+  --color-success:      #22c55e;
+  --color-success-bg:   #f0fdf4;
+  --color-danger:       #ef4444;
+  --color-danger-bg:    #fef2f2;
+  --color-text:         #1e293b;
+  --color-text-muted:   #64748b;
+  --color-border:       #e2e8f0;
+  --color-hint-bg:      #fefce8;
+  --color-hint-border:  #fde047;
+
+  --radius-sm:  6px;
+  --radius:     12px;
+  --radius-lg:  18px;
+  --shadow:     0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ============================================================
+   Layout wrapper
+   ============================================================ */
+.page-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.15s, transform 0.1s;
+  text-decoration: none;
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--color-accent-dark); }
+
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1.5px solid var(--color-border);
+}
+.btn-secondary:hover { background: var(--color-bg); }
+
+.btn-large {
+  font-size: 1.35rem;
+  padding: 1rem 3rem;
+  border-radius: var(--radius);
+}
+
+.btn-small {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.9rem;
+}
+
+/* ============================================================
+   Main menu — header
+   ============================================================ */
+.site-header {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.5px;
+}
+
+.site-subtitle {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+/* ============================================================
+   Main menu — CTA
+   ============================================================ */
+.cta-section {
+  text-align: center;
+}
+
+/* ============================================================
+   Main menu — history
+   ============================================================ */
+.history-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.history-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.history-card--win  { border-left: 4px solid var(--color-success); }
+.history-card--loss { border-left: 4px solid var(--color-danger);  }
+
+.history-answer {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+}
+
+.badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.badge--win  { background: var(--color-success-bg); color: #15803d; }
+.badge--loss { background: var(--color-danger-bg);  color: #b91c1c; }
+
+.history-meta {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.history-time {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.history-empty {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ============================================================
+   Site footer
+   ============================================================ */
+.site-footer {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.site-footer code {
+  background: var(--color-bg);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  font-family: "Courier New", monospace;
+}
+
+/* ============================================================
+   Game — header
+   ============================================================ */
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-title {
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.round-badge {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   Game — image row
+   ============================================================ */
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.image-tile {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.image-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plus-divider {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-text-muted);
+  line-height: 1;
+  user-select: none;
+}
+
+/* ============================================================
+   Game — hint
+   ============================================================ */
+.hint-box {
+  background: var(--color-hint-bg);
+  border: 1.5px solid var(--color-hint-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1.25rem;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   Game — feedback
+   ============================================================ */
+.feedback {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+
+.feedback--wrong {
+  background: var(--color-danger-bg);
+  color: #b91c1c;
+}
+
+.feedback--error {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+/* ============================================================
+   Game — guess form
+   ============================================================ */
+.guess-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.wrong-counter {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+#guess-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guess-input {
+  width: 320px;
+  padding: 0.7rem 1rem;
+  font-size: 1.15rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.15s;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.guess-input:focus {
+  border-color: var(--color-accent);
+}
+
+.guess-input:disabled {
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+}
+
+/* ============================================================
+   Result overlay
+   ============================================================ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.overlay-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-icon {
+  font-size: 3rem;
+  font-weight: 900;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.result-icon--win  { background: var(--color-success-bg); color: var(--color-success); }
+.result-icon--loss { background: var(--color-danger-bg);  color: var(--color-danger);  }
+
+.result-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.result-title--win  { color: #15803d; }
+.result-title--loss { color: #b91c1c; }
+
+.result-answer {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.overlay-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* ============================================================
+   Main content spacing
+   ============================================================ */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
